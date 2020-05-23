@@ -1,0 +1,12 @@
+# Package Managers
+# ---------------------------
+/node_modules/
+
+# System
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# Compiled Files
+# ---------------------------
+/dist/

@@ -1,0 +1,60 @@
+{
+  "name": "web-animation-boilerplate",
+  "description": "Super simple boilerplate for webpack-powered projects.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmalven/web-animation-boilerplate"
+  },
+  "author": {
+    "name": "Malven Co.",
+    "email": "chris@malven.co",
+    "url": "https://malven.co"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.3",
+    "@malven/eslint-config": "^1.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.4",
+    "css-loader": "^3.5.3",
+    "dotenv": "^8.2.0",
+    "error-overlay-webpack-plugin": "^0.4.1",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.18.3",
+    "glslify-loader": "^2.0.0",
+    "husky": "^4.0.4",
+    "lint-staged": "^10.2.2",
+    "raw-loader": "^4.0.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "npx webpack --config webpack.config.js",
+    "build-prod": "NODE_ENV=production npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint-scripts": "eslint --fix"
+  },
+  "license": "UNLICENSED",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint-scripts"
+    ]
+  }
+}

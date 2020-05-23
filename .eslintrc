@@ -1,0 +1,11 @@
+{
+  "extends": "@malven",
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
+  "rules": {
+      "no-console": "off"
+  }
+}
