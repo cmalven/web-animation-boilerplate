@@ -7,6 +7,7 @@ import '../styles/main.scss';
 
 window.APP = {};
 
+
 //
 //   App Initiation
 //
